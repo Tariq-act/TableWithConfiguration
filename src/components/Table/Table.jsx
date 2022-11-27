@@ -221,7 +221,11 @@ const Table = ({ data, tableConfigure }) => {
                 </td>
               )}
               {city.col && <td>{person.city}</td>}
-              {email.col && <td>{person.email}</td>}
+              {email.col && (
+                <td>
+                  <a href={`mailTo:${person.email}`}>{person.email}</a>{' '}
+                </td>
+              )}
               {date.col && <td>{person.joiningDate}</td>}
               {role.col && <td>{person.role}</td>}
             </tr>

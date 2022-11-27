@@ -18,6 +18,9 @@ td {
 th {
   cursor: pointer;
 }
+a {
+  color: #0071cc;
+}
 
 th:hover {
   background-color: #fbfbfb;
